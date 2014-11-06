@@ -49,7 +49,37 @@ a {
 }
 
 
-$mixin right ($right: 20px){
+@mixin right($right: 20px) {
   position: absolute;
   right: $right;
+}
+
+div {
+  @include right(40px);
+}
+
+
+
+@mixin rounded($vert, $horz, $radius: 10px) {
+  border-#{$vert}-#{$horz}-radius: $radius;
+　-moz-border-radius-#{$vert}#{$horz}: $radius;
+　-webkit-border-#{$vert}-#{$horz}-radius: $radius;
+}
+
+.left {
+  @include rounded(top, left)
+}
+
+.left50 {
+  @include rounded(top, right, 50px)
+}
+
+
+
+.abc {
+  @for $i from 1 to 10 {
+    .border-#{$i} {
+      border: #{$i}px solid blue;
+    }
+  }
 }
