@@ -1,0 +1,31 @@
+div {
+  color: #1875e7; }
+
+body {
+  border-left: 2px solid #333; }
+
+body {
+  margin: 7px;
+  top: 150px;
+  right: 100%; }
+
+div h1 {
+  color: red; }
+
+p border {
+  color: #1875e7; }
+
+a:hover {
+  color: #1875e7; }
+
+.wrap, .bd {
+  width: 20px; }
+
+.bd {
+  height: 20px; }
+
+.wrap, .bd {
+  float: left;
+  margin-left: 20px; }
+
+/*# sourceMappingURL=test.css.map */

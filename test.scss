@@ -1,0 +1,55 @@
+$blue : #1875e7;
+div {
+  color : $blue;
+}
+
+$l: left;
+
+body {
+  border-#{$l}: 2px solid #333;
+}
+
+$var: 10;
+body {
+  margin: (14px/2);
+  top: 50px + 100px;
+  right: $var * 10%;
+}
+
+div {
+  h1 {
+    color:red;
+  }
+}
+
+p {
+  border {
+    color: $blue;
+  }
+}
+
+a {
+  &:hover {color: #1875e7;}
+}
+
+.wrap {width:20px;}
+
+.bd {
+  @extend .wrap;
+  height: 20px;
+}
+
+@mixin left {
+  float: left;
+  margin-left: 20px;
+}
+
+.wrap {
+  @include left;
+}
+
+
+$mixin right ($right: 20px){
+  position: absolute;
+  right: $right;
+}
